@@ -1,0 +1,13 @@
+{
+  "name": "apostrophe-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node app.js",
+    "build": "node app.js @apostrophecms/asset:build",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "apostrophe": "^4.9.0"
+  }
+}

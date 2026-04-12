@@ -1,0 +1,17 @@
+databases:
+  - name: apostrophe-db
+    databaseName: apostrophe
+    user: apostrophe
+services:
+  - type: web
+    name: apostrophe
+    runtime: node
+    plan: starter
+    buildCommand: npm install && npm run build
+    startCommand: node app.js
+    autoDeploy: false
+    envVars:
+      - key: APOS_MONGODB_URI
+        value: ""
+      - key: SESSION_SECRET
+        generateValue: true
