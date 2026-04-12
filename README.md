@@ -6,6 +6,13 @@ A full-featured Node.js CMS with in-context editing, custom widgets, and a power
 
 > **Credits**: Built on [ApostropheCMS](https://apostrophecms.com) by [Apostrophe Technologies](https://github.com/apostrophecms). All trademarks belong to their respective owners.
 
+## Local Development
+
+    npm install
+    npm run dev
+
+Visit http://localhost:3000.
+
 ## Deploy on StackBlaze
 
 [![Deploy on StackBlaze](https://img.shields.io/badge/Deploy%20on-StackBlaze-orange)](https://stackblaze.com)
@@ -93,13 +100,6 @@ flowchart LR
 **Best for:** Production workloads, high-traffic applications, business-critical deployments.
 
 </details>
-
-## Local Development
-
-    npm install
-    npm run dev
-
-Visit http://localhost:3000.
 
 ---
 
