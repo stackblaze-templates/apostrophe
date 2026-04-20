@@ -103,6 +103,22 @@ flowchart LR
 
 ---
 
+## Security
+
+### Required environment variables
+
+The following variables **must** be set to secure values before going to production:
+
+| Variable | Description |
+|---|---|
+| `APOS_MONGODB_URI` | Full MongoDB connection string including credentials |
+| `SESSION_SECRET` | Long, random secret used to sign HTTP sessions. Generate with `node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"` |
+| `NODE_ENV` | Must be `production` in production (disables debug output and enables hardened defaults) |
+
+> **Warning**: The default `SESSION_SECRET` in `.env.example` is a placeholder. Running in production without changing it is a serious security risk. StackBlaze auto-generates a secure value via `generateValue: true` in `stackblaze.yaml` — verify this is in place before deploying.
+
+---
+
 ### Maintained by [StackBlaze](https://stackblaze.com)
 
 Weekly automated checks for up-to-date dependencies, security scanning, and best practices.
